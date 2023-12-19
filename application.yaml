@@ -1,17 +1,1 @@
-springdoc:
-  api-docs:
-    path: /swagger/docs
-  default-produces-media-type: New edited Version - 3
 my-name: Sairam
-hugohub:
-  cache:
-    redis:
-      connection: redis://${services-ElasticCacheAddress}##${services-ElasticCachePort}
-
-  database:
-    mysql:
-      connection: aws-aurora-v2://${common-notification-AuroraV2DbName}##${common-notification-AuroraV2Endpoint}##${common-notification-AuroraV2SecretArn}##${common-notification-AuroraV2Port}
-      pool-size: 20
-    audit-log:
-      connection: aws-dynamodb://${common-AuditLogTableName}##${common-Region:""}
-      table-name: ${common-AuditLogTableName}
