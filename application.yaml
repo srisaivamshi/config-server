@@ -1,7 +1,7 @@
 springdoc:
   api-docs:
     path: /swagger/docs
-  default-produces-media-type: New edited Version
+  default-produces-media-type: New edited Version - 2
 
 hugohub:
   cache:
