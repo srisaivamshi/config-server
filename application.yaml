@@ -3,7 +3,7 @@ springdoc:
     path: /swagger/docs
   default-produces-media-type: New edited Version - 3
 my-name:
-  CharanAnna
+  IndraneelAnna
 hugohub:
   cache:
     redis:
