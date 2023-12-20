@@ -2,6 +2,7 @@ CONFIG_SERVER_URL=http://localhost:6087/monitor  # Replace with your Config Serv
 BRANCH_TO_MONITOR=main  # Specify the branch to trigger the notification
 
 # Check if the pushed branch matches the specified branch
+echo "This is a simple message."
 while read oldrev newrev refname
 do
     if [[ $refname == "refs/heads/$BRANCH_TO_MONITOR" ]]
