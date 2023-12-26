@@ -1,7 +1,12 @@
 import sys
 import requests
 
+if len(sys.argv) < 2:
+    print("Error: Missing ngrok URL argument.")
+    sys.exit(1)
+
 ngrok_url = sys.argv[1]
+print(f"Ngrok URL: {ngrok_url}")
 
 # Fetch service instances from Eureka server
 eureka_url = f"{ngrok_url}/notification/eureka/apps"
