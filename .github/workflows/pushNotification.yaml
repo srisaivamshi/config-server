@@ -29,4 +29,5 @@ jobs:
 
     - name: Trigger Eureka Client Refresh
       run: |
+        echo "Ngrok URL: ${{ steps.ngrok.outputs.url }}"
         python3 scripts/trigger_refresh.py ${{ steps.ngrok.outputs.url }}
