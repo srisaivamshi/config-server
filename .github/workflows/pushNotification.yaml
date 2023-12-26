@@ -28,9 +28,9 @@ jobs:
       run: |
         ngrok_url=$(curl -s http://localhost:4040/api/tunnels | jq -r .tunnels[0].public_url)
         echo "Ngrok URL: $ngrok_url"
-        echo "::set-output name=url::$ngrok_url"
+        echo "NGROK_URL=$ngrok_url" >> $GITHUB_ENV
 
     - name: Trigger Eureka Client Refresh
       run: |
         echo "Ngrok URL: ${{ steps.ngrok.outputs.url }}"
-        python3 scripts/trigger_refresh.py ${{ steps.ngrok.outputs.url }}
+        python3 scripts/trigger_refresh.py $NGROK_URL
