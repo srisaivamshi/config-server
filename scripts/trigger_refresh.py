@@ -1,8 +1,10 @@
-import json
+import sys
 import requests
 
+ngrok_url = sys.argv[1]
+
 # Fetch service instances from Eureka server
-eureka_url = "http://localhost:6087/notification/eureka/apps"
+eureka_url = f"{ngrok_url}/notification/eureka/apps"
 response = requests.get(eureka_url, headers={"Accept": "application/json"})
 service_instances = response.json()["applications"]["application"]
 
