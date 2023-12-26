@@ -1,7 +1,7 @@
 import sys
 import requests
 
-ngrok_url = sys.argv[1]
+ngrok_url = sys.argv[0]
 
 # Fetch service instances from Eureka server
 eureka_url = f"{ngrok_url}/notification/eureka/apps"
