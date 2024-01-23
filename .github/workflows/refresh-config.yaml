@@ -1,7 +1,7 @@
 name: refresh-config-properties
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       stack_name:
         required: true
