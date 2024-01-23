@@ -1,7 +1,14 @@
 name: refresh-config-properties
 
 on:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      stack_name:
+        required: true
+        type: string
+      product:
+        required: true
+        type: string
 
 jobs:
   do-nothing:
