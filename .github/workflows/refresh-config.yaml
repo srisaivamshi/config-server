@@ -5,7 +5,10 @@ on:
     inputs:
       stack_name:
         required: true
-        type: string
+        type: choice
+        options:
+          - nonprod
+          - prod
       product:
         required: true
         type: string
