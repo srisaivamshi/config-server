@@ -1,0 +1,24 @@
+name: refresh-config-properties
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start-stack:
+    if: ${{ github.ref_name == 'main' || github.ref_name == 'eng' }}
+    runs-on: buildjet-2vcpu-ubuntu-2204
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Machine
+        uses: ./.github/actions/setup-machine-new
+
+      - name: Export PYTHONPATH for deployment
+        run: |
+          echo PYTHONPATH=$(pwd)/deployment >> "$GITHUB_ENV"
+
+      - name: Create AWS Credentials file
+        run: |
+          mkdir ~/.aws
+          touch ~/.aws/creden
