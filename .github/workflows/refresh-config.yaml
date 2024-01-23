@@ -7,11 +7,17 @@ on:
         required: true
         type: choice
         options:
+          - test
           - nonprod
           - prod
       product:
         required: true
-        type: string
+        type: choice
+        options:
+          - hugohub_sg
+          - hugosave_sg
+          - hugohub_pk
+          - hugobank_pk
 
 jobs:
   do-nothing:
