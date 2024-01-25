@@ -1,2 +1,3 @@
 card:
   is_feature_enabled: false
+  product_name: banking
