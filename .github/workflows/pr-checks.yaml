@@ -5,7 +5,12 @@ on:
     branches:
       - main
       - release*
-
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+ 
 jobs:
   example_job:
     runs-on: ubuntu-latest
