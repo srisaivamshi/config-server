@@ -1,0 +1,19 @@
+name: PR Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+      - release*
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Add your steps here
+      - name: Run a script
+        run: echo "This is a pull request targeting main or a release branch"
