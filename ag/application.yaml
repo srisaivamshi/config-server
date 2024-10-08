@@ -1,5 +1,5 @@
 my-name: Sairam
 compliance:
   tru-narrative:
-    strategies: "vamshi"
+    strategies: vamshi
     mimic-apis: true
