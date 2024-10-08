@@ -1,5 +1,5 @@
 my-name: Sairam
 compliance:
   tru-narrative:
-    strategies: vamshi
+    strategies: "{\"b3ec4035-80d5-4bca-880f-5606284753f6\":{\"offline\":\"1784\",\"online\":\"1767\"}}"
     mimic-apis: true
