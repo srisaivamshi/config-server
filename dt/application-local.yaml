@@ -1,5 +1,5 @@
 card:
-  is_feature_enabled: true
+  is_feature_enabled: false
   product_name: Card
   time_pass: yes
   again: yes
