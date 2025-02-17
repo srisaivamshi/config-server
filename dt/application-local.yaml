@@ -3,3 +3,8 @@ card:
   product_name: Card
   time_pass: no re
   again: yes
+  scheduler:
+    clearing_settlement_scheduler:
+      poll:
+        interval: "*/5 * * * * *"
+  
