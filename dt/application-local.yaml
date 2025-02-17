@@ -11,5 +11,5 @@ card:
 compliance:
    tru-narrative:
      poll:
-       time: PT10S
+       time: PT5S
   
