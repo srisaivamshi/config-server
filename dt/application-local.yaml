@@ -7,4 +7,9 @@ card:
     clearing_settlement_scheduler:
       poll:
         interval: "*/5 * * * * *"
+
+compliance:
+   tru-narrative:
+     poll:
+       time: PT5S
   
