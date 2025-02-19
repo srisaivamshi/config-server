@@ -1,6 +1,6 @@
 rate-limit: '{
   "service_rate_limit_config": {
-    "second": {
+    "second-changed": {
       "path_configs": {
         "internal": {
           "is_rate_limit_enabled": true,
