@@ -33,6 +33,3 @@ rate-limit: '{
     }
   }
 }'
-
-name:
- applicationName
