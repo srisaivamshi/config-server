@@ -16,23 +16,4 @@ compliance:
 other:
   file
 
-rate-limit: '{
-  "service_rate_limit_config": {
-    "behavioural": {
-      "path_configs": {
-        "internal": {
-          "is_rate_limit_enabled": true,
-          "header_key": "x-device-id",
-          "paths": [
-            "/app/v2/internal/**",
-            "/app/v2/dev/**"
-          ],
-          "bucket_expiration_time_in_minutes": 10,
-          "bucket_capacity": 10,
-          "refill_tokens_per_minute": 10,
-          "initial_token": 10
-        }
-      }
-    }
-  }
-}'
+
