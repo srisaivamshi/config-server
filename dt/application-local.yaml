@@ -16,7 +16,7 @@ compliance:
 rate-limit: '{
   "service_path_rate_limit_config": {
     "app": {
-      "is_rate_limit_enabled": true,
+      "is_rate_limit_enabled": false,
       "header_key": "x-device-id",
       "path": [
         "/api/v1/internal/**",
