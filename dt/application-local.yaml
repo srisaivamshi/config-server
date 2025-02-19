@@ -23,9 +23,9 @@ rate-limit: '{
         "/api/v1/dev/**"
       ],
       "bucket_expiration_time_in_minutes": 10,
-      "bucket_capacity": 10,
-      "refill_tokens_per_minute": 10,
-      "initial_token": 20
+      "bucket_capacity": 2,
+      "refill_tokens_per_minute": 2,
+      "initial_token": 2
     }
   }
 }'
