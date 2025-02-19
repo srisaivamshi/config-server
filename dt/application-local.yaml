@@ -13,14 +13,14 @@ compliance:
      poll:
        time: PT10S
 
+
 rate-limit: '{
   "service_path_rate_limit_config": {
     "app": {
-      "is_rate_limit_enabled": false,
+      "is_rate_limit_enabled": true,
       "header_key": "x-device-id",
       "path": [
-        "/api/v1/internal/**",
-        "/api/v1/dev/**"
+        "/api/v1/internal/**"
       ],
       "bucket_expiration_time_in_minutes": 10,
       "bucket_capacity": 2,
