@@ -13,6 +13,8 @@ compliance:
      poll:
        time: PT10S
 
+other:
+  file
 
 rate-limit: '{
   "service_path_rate_limit_config": {
