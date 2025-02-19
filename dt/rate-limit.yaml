@@ -1,0 +1,15 @@
+rate-limit-gtw: '{
+  "service_path_rate_limit_config": {
+    "app": {
+      "is_rate_limit_enabled": true,
+      "header_key": "x-device-id",
+      "path": [
+        "/api/v1/internal/**"
+      ],
+      "bucket_expiration_time_in_minutes": 10,
+      "bucket_capacity": 2,
+      "refill_tokens_per_minute": 2,
+      "initial_token": 2
+    }
+  }
+}'
