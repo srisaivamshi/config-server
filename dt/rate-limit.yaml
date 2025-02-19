@@ -1,9 +1,9 @@
-rate-limit-gtw: '{
+rate-limit: '{
   "service_rate_limit_config": {
     "app": {
       "path_configs": {
         "internal": {
-          "is_rate_limit_enabled": true,
+          "is_rate_limit_enabled": false,
           "header_key": "x-device-id",
           "paths": [
             "/app/v2/internal/**",
