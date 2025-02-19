@@ -10,8 +10,7 @@ card:
 
 compliance:
    tru-narrative:
-     poll:
-       time: PT10S
+    poll
 
 other:
   file
